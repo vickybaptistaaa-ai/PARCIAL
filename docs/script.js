@@ -1,9 +1,8 @@
-// Elements
+
 const loadBtn = document.getElementById('load-btn');
 const themeBtn = document.getElementById('theme-btn');
 const cardsContainer = document.getElementById('cards-container');
 
-// Fetches the JSON file and builds the cards only when the button is clicked
 const loadProjects = () => {
   fetch('projects.json')
     .then(res => res.json())
@@ -20,7 +19,6 @@ const loadProjects = () => {
     });
 };
 
-// Toggles the dark/light theme class on the body
 const toggleTheme = () => {
   document.body.classList.toggle('dark-mode');
 };

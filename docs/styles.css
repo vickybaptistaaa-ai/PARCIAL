@@ -1,11 +1,10 @@
-/* Universal selector - required */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* HTML element selector used as the font-size base reference for rem units */
 html {
   font-size: 16px;
 }
@@ -104,7 +103,6 @@ footer {
   border-top: 1px dashed #4a7ba6;
 }
 
-/* Dark / light theme toggle - class added and removed via classList.toggle() */
 body.dark-mode {
   background-color: #121212;
   color: #f4f4f4;

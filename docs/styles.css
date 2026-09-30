@@ -1,11 +1,9 @@
-/* Universal selector - required */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* HTML element selector used as the font-size base reference for rem units */
 html {
   font-size: 16px;
 }
@@ -44,7 +42,6 @@ main {
   text-align: center;
 }
 
-/* Shared button style. The gradient is done with background-image, as suggested in class */
 .btn {
   font-size: 1rem;
   font-weight: 600;
@@ -84,7 +81,6 @@ main {
   font-weight: 400;
 }
 
-/* Each product item fetched from the JSON file */
 .product-card {
   text-align: left;
   padding: 1em 0;
@@ -114,7 +110,6 @@ footer {
   border-top: 1px dashed #e63946;
 }
 
-/* Dark / light theme toggle - class added and removed via classList.toggle() */
 .dark-mode {
   background-color: #121212;
   color: #f4f4f4;

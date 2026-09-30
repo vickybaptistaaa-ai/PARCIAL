@@ -1,0 +1,131 @@
+/* Universal selector - required */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML element selector used as the font-size base reference for rem units */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  background-color: #f4f4f4;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+header {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 2em 1em;
+  border-bottom: 4px solid #e63946;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0.5em;
+}
+
+main {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+/* Shared button style. The gradient is done with background-image, as suggested in class */
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-image: linear-gradient(135deg, #e63946, #ff8c42);
+  border: 1px solid #e63946;
+  border-radius: 50px;
+  padding: 0.7em 1.8em;
+  margin-bottom: 1.5em;
+  height: 3rem;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 0.6em;
+  margin-bottom: 0.8em;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Each product item fetched from the JSON file */
+.product-card {
+  text-align: left;
+  padding: 1em 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.product-card .details {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+footer {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  font-size: 0.85rem;
+  padding: 1em;
+  border-top: 1px dashed #e63946;
+}
+
+/* Dark / light theme toggle - class added and removed via classList.toggle() */
+.dark-mode {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+  border: 1px solid #333333;
+}
+
+.dark-mode .product-card {
+  border-bottom: 1px solid #333333;
+}
